@@ -8,8 +8,12 @@ body{
 .jumbotron{
   color: yellow;
   text-align: center;
-  background-image: url("https://images7.alphacoders.com/858/thumb-1920-858236.jpg");
+  background-color: black;
+  background-image: url("https://image.shutterstock.com/image-photo/tasty-pepperoni-pizza-cooking-ingredients-260nw-1114907849.jpg");
   margin-bottom: 0;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-weight: bolder;
 }
 
@@ -19,13 +23,14 @@ body{
 
 .pizza-display{
   background-color: rgba(0, 0, 0, 0.7);
+  padding: 2%;
 }
 
 .pizza-display-image{
   width: 100%;
   height: 300px;
-  margin: 1% 0 1% 0;
-  object-fit: contain;
+  margin: 1%;
+  object-fit: cover;
 }
 
 .navigation ul{
@@ -33,6 +38,7 @@ body{
   overflow: hidden;
   border-radius: 5px; 
   font-weight: bolder;
+  margin: 0;
 }
 
 .navigation li{
