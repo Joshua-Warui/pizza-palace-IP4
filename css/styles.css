@@ -3,6 +3,7 @@ body{
   color: yellow;
   background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0729/2979/pizza_pattern2_shop_preview.png");
   background-blend-mode: hard-light;
+  font-family: 'Lobster';
 }
 
 .jumbotron{
@@ -13,7 +14,10 @@ body{
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
-  font-weight: bolder;
+}
+
+.jumbotron h1{
+  font-size: 70px;
 }
 
 .pizza-word{
@@ -54,11 +58,19 @@ body{
   padding: 2%;
 }
 
-.pizza-display-image{
+.pizza-display-image-main{
   width: 100%;
   height: 300px;
   margin: 1%;
   object-fit: cover;
+}
+
+.pizza-display-image{
+  width: 100%;
+  height: 200px;
+  margin: 20% 0 20% 0;
+  object-fit: cover;
+  
 }
 
 .menu{
@@ -73,6 +85,18 @@ body{
   margin: 0 20% 2% 20%;
   padding: 1%;
   border-radius: 10px;
+  font-weight: bold;
+}
+
+.pizza-menu{
+  font-family: 'Josefin Sans';
+}
+
+.pizza-sections{
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1%;
+  font-family: 'Lobster';
 }
 
 .menu-images{
