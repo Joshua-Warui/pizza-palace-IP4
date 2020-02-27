@@ -1,12 +1,11 @@
 body{
   background-color: black;
-  color: whitesmoke;
+  color: yellow;
   background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0729/2979/pizza_pattern2_shop_preview.png");
   background-blend-mode: hard-light;
 }
 
 .jumbotron{
-  color: yellow;
   text-align: center;
   background-color: black;
   background-image: url("https://image.shutterstock.com/image-photo/tasty-pepperoni-pizza-cooking-ingredients-260nw-1114907849.jpg");
@@ -19,18 +18,6 @@ body{
 
 .pizza-word{
   color:red;
-}
-
-.pizza-display{
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 2%;
-}
-
-.pizza-display-image{
-  width: 100%;
-  height: 300px;
-  margin: 1%;
-  object-fit: cover;
 }
 
 .navigation ul{
@@ -46,7 +33,6 @@ body{
   width:30%;
   text-align: center;
   float: left;
-  margin: 2px;
   list-style-type: none;
 }
 
@@ -59,6 +45,47 @@ body{
 }
 
 .navigation a:hover{
-  color: yellow;  
   background-color: red;
+  color: yellow;
+}
+
+.pizza-display{
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2%;
+}
+
+.pizza-display-image{
+  width: 100%;
+  height: 300px;
+  margin: 1%;
+  object-fit: cover;
+}
+
+.menu{
+  background-color: rgba(255, 0, 0, 0.4);
+  text-align: center;
+  font-weight: bolder;  
+}
+
+.menu-intro{
+  background-color: rgba(255, 255, 0, 0.8);
+  color: whitesmoke;
+  margin: 0 20% 2% 20%;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.menu-images{
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.pizza-names{
+  padding: 2%;
+  border-bottom: whitesmoke 2px solid;
+  border-top: whitesmoke 2px solid;
+  margin: 2% 0 2% 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
 }
