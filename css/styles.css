@@ -6,7 +6,7 @@ body{
   font-family: 'Lobster';
 }
 
-.jumbotron{
+.title{
   text-align: center;
   background-color: black;
   background-image: url("https://image.shutterstock.com/image-photo/tasty-pepperoni-pizza-cooking-ingredients-260nw-1114907849.jpg");
@@ -16,7 +16,7 @@ body{
   background-repeat: no-repeat;
 }
 
-.jumbotron h1{
+.title h1{
   font-size: 70px;
 }
 
@@ -49,8 +49,7 @@ body{
 }
 
 .navigation a:hover{
-  background-color: red;
-  color: yellow;
+  background-color: rgb(247, 203, 81);
 }
 
 .pizza-display{
@@ -75,9 +74,10 @@ body{
 }
 
 .menu{
-  background-color: rgba(255, 0, 0, 0.4);
+  background-color: rgba(255, 0, 0, 0.3);
   text-align: center;
   font-weight: bolder;  
+  padding: 3%;
 }
 
 .menu-intro{
@@ -89,8 +89,67 @@ body{
   font-weight: bold;
 }
 
+.place-order{
+  background-color: rgba(255, 0, 0, 0.8);
+  color: whitesmoke;
+  margin: 0 40% 2% 40%;
+  padding: 1%;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.place-order:hover{
+  cursor: pointer;
+  background-color: rgba(247, 113, 80, 0.9);
+}
+
+.order{
+  z-index:1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(233, 150, 122, 0.9);
+  margin: 0 7% 0 7%;
+  padding: 2%;
+  height: 700px;
+  border-radius: 5px;
+}
+
+.order-sections{
+  background-color: rgba(245, 189, 170, 0.7);
+  padding: 2%;
+  border-radius: 5px;
+}
+
+.order-sections-header{
+  font-weight: bold;
+  font-family: 'Lobster';
+  color: white;
+  border-bottom: 2px solid;
+  margin-bottom: 2%;
+  padding: 2%;
+  background-color: rgba(185, 143, 129, 0.7);
+}
+
+.size-images{
+  width: 50%;
+}
+
+#small-size{
+  margin: 20% 0 20% 0;
+}
+
+#medium-size{
+  margin: 10% 0 10% 0;
+}
+
 .pizza-menu{
   font-family: 'Josefin Sans';
+  position: relative;
+}
+
+.choose-pizza{
+  cursor: pointer;
 }
 
 .pizza-sections{
@@ -101,6 +160,10 @@ body{
   border-left: 3px solid whitesmoke;
   border-right: 3px solid whitesmoke;
   
+}
+
+.menu-row{
+  margin-bottom: 3%;
 }
 
 .menu-images{
@@ -115,7 +178,6 @@ body{
   height: 250px;
   border-radius: 5px;
   object-fit: cover;
-  cursor: pointer;
 }
 
 .pizza-names{
