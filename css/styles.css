@@ -119,13 +119,20 @@ body{
   background-color: rgba(245, 189, 170, 0.7);
   padding: 2%;
   border-radius: 5px;
+  margin: 0;
+}
+
+.order-sections p{
+  color: seagreen;
 }
 
 .order-sections-header{
   font-weight: bold;
   font-family: 'Lobster';
   color: white;
-  border-bottom: 2px solid;
+  border-bottom: 4px solid;
+  border-top: 4px solid ;
+  border-radius: 5px;
   margin-bottom: 2%;
   padding: 2%;
   background-color: rgba(185, 143, 129, 0.7);
@@ -133,14 +140,19 @@ body{
 
 .size-images{
   width: 50%;
+  cursor: pointer;
 }
 
 #small-size{
-  margin: 20% 0 20% 0;
+  margin: 50% 0 5% 0;
 }
 
 #medium-size{
-  margin: 10% 0 10% 0;
+  margin: 20% 0 5% 0;
+}
+
+#large-size{
+  margin: 3% 0 5% 0;
 }
 
 .pizza-menu{
@@ -160,6 +172,22 @@ body{
   border-left: 3px solid whitesmoke;
   border-right: 3px solid whitesmoke;
   
+}
+
+.custom-pizza{
+  text-align: center;
+}
+
+.pizza-type{
+  color: seagreen;
+}
+
+.crust-type{
+  color: rgb(238, 255, 0);
+}
+
+.topping-type{
+  color: red;
 }
 
 .menu-row{
