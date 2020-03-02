@@ -12,7 +12,6 @@ function getPizzaOrder(pizzaType,pizzaQuantity,extraToppings,crustType,pizzaSize
     this.deliveryPrice = 0;
     this.price = 0;
 };
-
 getPizzaOrder.prototype.finalCost = function() {
   if (this.pizzaSize === "small") {
     this.sizePrice += 300;
@@ -43,14 +42,22 @@ getPizzaOrder.prototype.finalCost = function() {
   }else if (this.extraToppings === "bacon") {
     this.toppingsPrice += 200;
   };
+  this.price = ((this.sizePrice + this.crustPrice + this.toppingsPrice) * this.pizzaQuantity);
+};
+getPizzaOrder.prototype.toBeDelivered = function (){
   if(this.delivery === "delivered"){
-    this.deliveryPrice = 300;
+    this.price += 300;
   } else if(this.delivery === "collected"){
-    this.deliveryPrice = 0;
-  }
-  
-  this.price = (this.sizePrice + this.crustPrice + this.toppingsPrice) * this.pizzaQuantity + this.deliveryPrice;
-}
+    this.price += 0;
+  };
+};
+function resetFieldValues(){
+  pizzaSize = "";
+  pizzaType = "";
+  extraToppings = "";
+  crustType = "";
+  $("#pizza-quantity").val("");
+};
 
 $(function(){
   var modal = $(".order");
@@ -70,15 +77,11 @@ $(function(){
     var extraToppings = $("#topping-type").val();
     var pizzaQuantity = parseInt($("#pizza-quantity").val());
     var delivery = $("#delivery").val();
-    console.log(delivery);
-    
-    var newPizzaOrder = new getPizzaOrder(pizzaType,pizzaQuantity,extraToppings,crustType,pizzaSize,pizzaQuantity,delivery);
+    var newPizzaOrder = new getPizzaOrder(pizzaType,pizzaQuantity,extraToppings,crustType,pizzaSize,delivery);
     newPizzaOrder.finalCost();
-    console.log(newPizzaOrder);
-    console.log(newPizzaOrder.delivery);
-    console.log(newPizzaOrder.deliveryPrice);
-    
+    newPizzaOrder.toBeDelivered();    
     alert("You have ordered " + pizzaQuantity + " " + pizzaType + " pizza(s) with a " + crustType + " crust and " + extraToppings + " toppings. It will be " + delivery + ".");
     alert("The total is " + newPizzaOrder.price + " Ksh");
+    resetFieldValues();
   }); 
 });
