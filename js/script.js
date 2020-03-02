@@ -1,4 +1,4 @@
-var totalCosts = [];
+//Business Logic//
 function getPizzaOrder(pizzaType,pizzaQuantity,extraToppings,crustType,pizzaSize,delivery) {
     this.pizzaType = pizzaType;
     this.pizzaQuantity = pizzaQuantity;
@@ -59,6 +59,7 @@ function resetFieldValues(){
   $("#pizza-quantity").val("");
 };
 
+//User Logic //
 $(function(){
   var modal = $(".order");
   var placeOrder = $(".place-order");
