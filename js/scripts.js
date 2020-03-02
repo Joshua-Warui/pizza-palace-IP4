@@ -1,5 +1,5 @@
 //Business Logic//
-function totalCost(pizzaType,pizzaQuantity,extraToppings,crustType){
+function findTotalCost(pizzaType,pizzaQuantity,extraToppings,crustType){
   var totalPizzaCost = pizzaType + pizzaQuantity + extraToppings + crustType;
   return totalPizzaCost;
 };
@@ -14,7 +14,6 @@ function resetFieldValues(){
 
 
 
-
 //User Logic//
 $(function(){
   var modal = $(".order");
@@ -26,5 +25,14 @@ $(function(){
   close.click(function(){
     modal.hide();
   });
-  
+  var pizzaSize;
+  $("#small-size").click(function(){
+    pizzaSize = 300
+  });
+  $("#medium-size").click(function(){
+    pizzaSize = 600
+  });
+  $("#large-size").click(function(){
+    pizzaSize = 850
+  });
 });
