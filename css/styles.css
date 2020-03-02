@@ -217,6 +217,11 @@ body{
   margin: 1% 0 1% 0;
 }
 
+#pizza-size{
+  color: seagreen;
+  margin: 1% 0 1% 0;
+}
+
 #order-placement{
   width: 20%;
   background-color: red;

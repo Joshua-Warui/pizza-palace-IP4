@@ -25,14 +25,17 @@ $(function(){
   close.click(function(){
     modal.hide();
   });
-  var pizzaSize;
-  $("#small-size").click(function(){
-    pizzaSize = 300
-  });
-  $("#medium-size").click(function(){
-    pizzaSize = 600
-  });
-  $("#large-size").click(function(){
-    pizzaSize = 850
+  $("order-placement").submit(function(event){
+    event.preventDefault();
+    var pizzaSize = $("#pizza-size select").val();
+    var pizzaType = $("#pizza-type select").val();
+    var crustType = $("#crust-type select").val();
+    var extraToppings = $("#topping-type select").val();
+    var pizzaQuantity = parseInt($("pizza-quantity select").val());
+    console.log(pizzaSize);
+    console.log(pizzaType);
+    console.log(crustType);
+    console.log(extraToppings);
+    console.log(pizzaQuantity);
   });
 });
