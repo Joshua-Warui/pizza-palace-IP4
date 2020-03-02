@@ -43,9 +43,9 @@ getPizzaOrder.prototype.finalCost = function() {
   }else if (this.extraToppings === "bacon") {
     this.toppingsPrice += 200;
   };
-  if(this.delivery == "delivered"){
+  if(this.delivery === "delivered"){
     this.deliveryPrice = 300;
-  } else if(delivery == "collected"){
+  } else if(this.delivery === "collected"){
     this.deliveryPrice = 0;
   }
   
@@ -74,6 +74,8 @@ $(function(){
     
     var newPizzaOrder = new getPizzaOrder(pizzaType,pizzaQuantity,extraToppings,crustType,pizzaSize,pizzaQuantity,delivery);
     newPizzaOrder.finalCost();
+    console.log(newPizzaOrder);
+    console.log(newPizzaOrder.delivery);
     console.log(newPizzaOrder.deliveryPrice);
     
     alert("You have ordered " + pizzaQuantity + " " + pizzaType + " pizza(s) with a " + crustType + " crust and " + extraToppings + " toppings. It will be " + delivery + ".");
