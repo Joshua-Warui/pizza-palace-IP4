@@ -66,33 +66,33 @@
             <p class="pizza-names">Hawaiian</p>
           </div>
           <div class="col-sm-3 choose-pizza">
-            <img class="menu-images" src="https://www.dominos.com.au/ManagedAssets/AU/product/P016/AU_P016_en_hero_4055.jpg?v-457462577" alt="">
+            <img class="menu-images" src="https://www.dominos.com.au/ManagedAssets/AU/product/P016/AU_P016_en_hero_4055.jpg?v-457462577" alt="Pepperoni pizza">
             <p class="pizza-names">Pepperoni</p>
           </div>
           <div class="col-sm-3 choose-pizza">
-            <img class="menu-images" src="https://previews.123rf.com/images/elenades/elenades1409/elenades140900095/32132765-pizza-with-chicken-tomato-and-mushrooms-on-dark-background-top-view.jpg" alt="">
+            <img class="menu-images" src="https://previews.123rf.com/images/elenades/elenades1409/elenades140900095/32132765-pizza-with-chicken-tomato-and-mushrooms-on-dark-background-top-view.jpg" alt="Chicken Mushroom">
             <p class="pizza-names">Chicken Mushroom</p>
           </div>
           <div class="col-sm-3 choose-pizza">
-            <img class="menu-images" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/c3/c5/db/margherita-pizza.jpg" alt="">
+            <img class="menu-images" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/c3/c5/db/margherita-pizza.jpg" alt="Margherita pizza">
             <p class="pizza-names">Margherita</p>
           </div>
         </div>
         <div class="row menu-row">
           <div class="col-sm-3 choose-pizza">
-            <img class="menu-images" src="https://www.tysonfoodservice.com/sites/default/files/2018-06/Traditional_0315.jpg" alt="Hawaiian pizza">
+            <img class="menu-images" src="https://www.tysonfoodservice.com/sites/default/files/2018-06/Traditional_0315.jpg" alt="Jalapeno pizza">
             <p class="pizza-names">Jalapeno</p>
           </div>
           <div class="col-sm-3 choose-pizza">
-            <img class="menu-images" src="https://lh3.googleusercontent.com/proxy/cgk4-gDQheIRB7CXz7IGBYF-X52Z45JdT2FU0SF1VyAsPSjRfY6x5FsF9_if_fNb-S0iPsYtATtlVNXfnSmi-bUT5w4LNGM4HPB2-biesUbZaWrDHQ" alt="">
+            <img class="menu-images" src="https://lh3.googleusercontent.com/proxy/NHimDi1w6sxCmkcuEL-3w-AhSGJuF37ZjBDbKeR5e0VkXbDhoFKoVMHhesCoH9q7PTlDS-jJp5ukrt1Mtqr-w4lJJ14onHfa5zWzzRNpAB6u2ucpJg" alt="BBQ Beef Pizza">
             <p class="pizza-names">BBQ Beef</p>
           </div>
           <div class="col-sm-3 choose-pizza">
-            <img class="menu-images" src="https://assets.kraftfoods.com/recipe_images/opendeploy/122046-12a910429e20fa8ff0ce0d1c2d6382bce0213672_642x428.jpg" alt="">
+            <img class="menu-images" src="https://assets.kraftfoods.com/recipe_images/opendeploy/122046-12a910429e20fa8ff0ce0d1c2d6382bce0213672_642x428.jpg" alt="Bacon and Mushroom Pizza">
             <p class="pizza-names">Bacon Mushroom</p>
           </div>
           <div class="col-sm-3 choose-pizza">
-            <img class="menu-images" src="https://photos.bigoven.com/recipe/hero/spinach-and-feta-veggie-pizza.jpg" alt="">
+            <img class="menu-images" src="https://photos.bigoven.com/recipe/hero/spinach-and-feta-veggie-pizza.jpg" alt="Feta and Spinach pizza">
             <p class="pizza-names">Feta Spinach</p>
           </div>
         </div>
@@ -138,23 +138,37 @@
                 <div class="col-sm-4 crust-type">
                   <label for="crust">Crust</label>
                   <select name="crust" id="crust-type" class="form-control">
-                    <option value="stuffed">Stuffed</option>
-                    <option value="thick">Thick</option>
-                    <option value="thin">Thin</option>
-                    <option value="gluten-free">Gluten Free</option>
+                    <option value="stuffed">Stuffed - 150 Ksh</option>
+                    <option value="thick">Thick - 100 Ksh</option>
+                    <option value="thin">Thin - 100 Ksh</option>
+                    <option value="gluten-free">Gluten Free - 200 Ksh</option>
                   </select>
                 </div>
                 <div class="col-sm-4 topping-type">
                   <label for="crust">Extra Toppings</label>
                   <select name="crust" id="topping-type" class="form-control">
-                    <option value="ham">Ham</option>
-                    <option value="cheese">Cheese</option>
-                    <option value="olives">Olives</option>
-                    <option value="mushrooms">Mushrooms</option>
-                    <option value="bacon">Bacon</option>
+                    <option value="ham">Ham - 200 Ksh</option>
+                    <option value="cheese">Cheese - 200 Ksh</option>
+                    <option value="olives">Olives - 200 Ksh</option>
+                    <option value="mushrooms">Mushrooms - 200 Ksh</option>
+                    <option value="bacon">Bacon - 200 Ksh</option>
                   </select>
                 </div>
               </div>
+              <div class="row">
+                <div class="col-sm-6 pizza-quantity">
+                  <label for="quantity">How many do you want?</label>
+                  <input type="number" class="form-control" id="pizza-quantity">
+                </div>
+                <div class="col-sm-6 delivery">
+                  <label for="delivery">Delivered or Collected?</label>
+                  <select name="delivery" class="form-control">
+                    <option value="Delivered">Delivered</option>
+                    <option value="Delivered">Collected</option>
+                  </select>
+                </div>
+              </div>
+              <button id="order-placement" class="btn">Place Order</button>
             </form>
           </div>
         </div>

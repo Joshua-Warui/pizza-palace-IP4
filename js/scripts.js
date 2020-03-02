@@ -1,6 +1,21 @@
+//Business Logic//
+function totalCost(pizzaType,pizzaQuantity,extraToppings,crustType){
+  var totalPizzaCost = pizzaType + pizzaQuantity + extraToppings + crustType;
+  return totalPizzaCost;
+};
+
+function resetFieldValues(){
+  pizzaSize = "";
+  pizzaType = "";
+  extraToppings = "";
+  crustType = "";
+  $("#pizza-quantity").val() = "";
+};
 
 
 
+
+//User Logic//
 $(function(){
   var modal = $(".order");
   var placeOrder = $(".place-order");
@@ -11,9 +26,5 @@ $(function(){
   close.click(function(){
     modal.hide();
   });
-  window.click(function(event){
-    if(event.target == modal){
-      modal.hide();
-    };
-  });
+  
 });

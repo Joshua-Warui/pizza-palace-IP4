@@ -128,13 +128,11 @@ body{
   position: absolute;
   top: 0;
   bottom: 0;
-  background-color: rgba(233, 150, 122, 0.9);
-  background-image: url("https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0729/2979/pizza_pattern2_shop_preview.png");
+  background-color: rgba(0, 0, 0, 0.5);
   margin: 0 7% 0 7%;
   padding: 2%;
   height: 700px;
   border-radius: 5px;
-  overflow: auto;
   display: none;
 }
 
@@ -154,7 +152,7 @@ body{
 }
 
 .order-sections{
-  background-color: rgba(245, 189, 170, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 2%;
   border-radius: 5px;
   margin: 0;
@@ -173,7 +171,7 @@ body{
   border-radius: 5px;
   margin-bottom: 2%;
   padding: 2%;
-  background-color: rgba(185, 143, 129, 0.7);
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 .size-images{
@@ -209,9 +207,29 @@ body{
   color: red;
 }
 
+.pizza-quantity{
+  color: yellow;
+  margin: 1% 0 1% 0;
+}
+
+.delivery{
+  color: red;
+  margin: 1% 0 1% 0;
+}
+
+#order-placement{
+  width: 20%;
+  background-color: red;
+  color: yellow;
+  padding: 2%;
+  margin: 2%;
+  font-family: 'Lobster';
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .menu-row{
   margin-bottom: 3%;
-  /* background-color: turquoise; */
 }
 
 .menu-images{
