@@ -31,15 +31,11 @@ getPizzaOrder.prototype.finalCost = function() {
     this.crustPrice = 200;
   }; 
 
-  if (this.extraToppings === "ham") {
-    this.toppingsPrice = 200;
-  } else if (this.extraToppings === "cheese") {
-    this.toppingsPrice = 200;
-  } else if (this.extraToppings === "olives") {
-    this.toppingsPrice = 200;
-  }else if (this.extraToppings === "mushrooms") {
-    this.toppingsPrice = 200;
-  }else if (this.extraToppings === "bacon") {
+  if (this.pizzaSize === "small") {
+    this.toppingsPrice = 100;
+  } else if (this.pizzaSize === "medium") {
+    this.toppingsPrice = 150;
+  } else if (this.pizzaSize === "large") {
     this.toppingsPrice = 200;
   };
   this.price = ((this.sizePrice + this.crustPrice + this.toppingsPrice) * this.pizzaQuantity);
