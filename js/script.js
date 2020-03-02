@@ -14,33 +14,33 @@ function getPizzaOrder(pizzaType,pizzaQuantity,extraToppings,crustType,pizzaSize
 };
 getPizzaOrder.prototype.finalCost = function() {
   if (this.pizzaSize === "small") {
-    this.sizePrice += 300;
+    this.sizePrice = 300;
   } else if (this.pizzaSize === "medium") {
-    this.sizePrice += 600;
+    this.sizePrice = 600;
   } else if (this.pizzaSize === "large") {
-    this.sizePrice += 850;
+    this.sizePrice = 850;
   } ;
 
   if (this.crustType === "stuffed") {
-    this.crustPrice += 150;
+    this.crustPrice = 150;
   } else if (this.crustType === "thick") {
-    this.crustPrice += 100;
+    this.crustPrice = 100;
   } else if (this.crustType === "thin") {
-    this.crustPrice += 100;
+    this.crustPrice = 100;
   } else if (this.crustType === "gluten-free") {
-    this.crustPrice += 200;
+    this.crustPrice = 200;
   }; 
 
   if (this.extraToppings === "ham") {
-    this.toppingsPrice += 200;
+    this.toppingsPrice = 200;
   } else if (this.extraToppings === "cheese") {
-    this.toppingsPrice += 200;
+    this.toppingsPrice = 200;
   } else if (this.extraToppings === "olives") {
-    this.toppingsPrice += 200;
+    this.toppingsPrice = 200;
   }else if (this.extraToppings === "mushrooms") {
-    this.toppingsPrice += 200;
+    this.toppingsPrice = 200;
   }else if (this.extraToppings === "bacon") {
-    this.toppingsPrice += 200;
+    this.toppingsPrice = 200;
   };
   this.price = ((this.sizePrice + this.crustPrice + this.toppingsPrice) * this.pizzaQuantity);
 };
