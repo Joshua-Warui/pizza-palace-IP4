@@ -77,7 +77,7 @@ $(function(){
     var newPizzaOrder = new getPizzaOrder(pizzaType,pizzaQuantity,extraToppings,crustType,pizzaSize,delivery);
     newPizzaOrder.finalCost();
     newPizzaOrder.toBeDelivered();    
-    alert("You have ordered " + pizzaQuantity + " " + pizzaType + " pizza(s) with a " + crustType + " crust and " + extraToppings + " toppings. It will be " + delivery + ".");
+    alert("You have ordered " + pizzaQuantity + " " + pizzaSize + " " + pizzaType + " pizza(s) with a " + crustType + " crust and " + extraToppings + " toppings. It will be " + delivery + ".");
     alert("The total is " + newPizzaOrder.price + " Ksh");
     resetFieldValues();
   }); 
