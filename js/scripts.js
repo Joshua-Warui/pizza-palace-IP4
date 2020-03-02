@@ -1,15 +1,23 @@
 //Business Logic//
-function findTotalCost(pizzaType,pizzaQuantity,extraToppings,crustType){
-  var totalPizzaCost = pizzaType + pizzaQuantity + extraToppings + crustType;
-  return totalPizzaCost;
-};
-
 function resetFieldValues(){
   pizzaSize = "";
   pizzaType = "";
   extraToppings = "";
   crustType = "";
   $("#pizza-quantity").val() = "";
+};
+
+function PizzaOrder(pizzaSize,pizzaType,pizzaQuantity,crustType,extraToppings){
+  this.pizzaSize = pizzaSize;
+  this.pizzaType = pizzaType;
+  this.pizzaQuantity = pizzaQuantity;
+  this.crustType = crustType;
+  this.extraToppings = extraToppings;
+};
+
+PizzaOrder.prototype.findTotalCost = function(pizzaType,pizzaQuantity,extraToppings,crustType){
+  var totalPizzaCost = pizzaType + pizzaQuantity + extraToppings + crustType;
+  return totalPizzaCost;
 };
 
 
@@ -25,7 +33,7 @@ $(function(){
   close.click(function(){
     modal.hide();
   });
-  $("order-placement").submit(function(event){
+  $(".custom-pizza").submit(function(event){
     event.preventDefault();
     var pizzaSize = $("#pizza-size select").val();
     var pizzaType = $("#pizza-type select").val();

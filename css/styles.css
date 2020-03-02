@@ -176,7 +176,6 @@ body{
 
 .size-images{
   width: 50%;
-  cursor: pointer;
 }
 
 #small-size{
@@ -208,17 +207,17 @@ body{
 }
 
 .pizza-quantity{
-  color: yellow;
+  color: seagreen;
   margin: 1% 0 1% 0;
 }
 
 .delivery{
-  color: red;
+  color: yellow;
   margin: 1% 0 1% 0;
 }
 
-#pizza-size{
-  color: seagreen;
+.pizza-size{
+  color: red;
   margin: 1% 0 1% 0;
 }
 
